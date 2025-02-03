@@ -1,0 +1,125 @@
+{{!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consumer Signup</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container" style="background-color: aquamarine; width:20vw; margin-top: 25vh; border-radius: 5%;">
+        <form class="d-flex flex-column p-2 justify-content-center" action="/consumerSignup" method="post">
+            <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" name="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="pass" class="form-label">Password</label>
+                <input type="password" name="pass" class="form-control" id="pass" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Sign Up</button>
+            <div class="form-text text-center">Already have an account? <a href="/consumerLogin">Login</a></div>
+        </form>
+    </div>
+</body>
+</html> --}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consumer Signup</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/public/style.css">
+    <style>
+        body {
+            background-color: #f3f4f6;
+            font-family: Arial, sans-serif;
+        }
+        .footer {
+            background-color: #228B22;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            width: 100vw;
+            margin-top: 2rem;
+            position:absolute;
+            bottom: 0px;
+        }
+        .signup-container {
+            width: 30rem;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .btn-primary {
+            background-color: #16a34a;
+            border: none;
+            transition: background-color 0.3s;
+        }
+        .btn-primary:hover {
+            background-color: #15803d;
+        }
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="https://i.pinimg.com/474x/d4/ef/c9/d4efc95ce89bb47012c5c50ce36d488d.jpg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                Marketplace
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            More
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Contact</a></li>
+                            <li><a class="dropdown-item" href="#">Goals</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container d-flex justify-content-center align-items-center" style="height: 80vh;">
+        <div class="signup-container">
+            <h3 class="mb-4">Consumer Signup</h3>
+            <form action="/consumerSignup" method="post">
+                <div class="mb-3 text-start">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" name="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3 text-start">
+                    <label for="pass" class="form-label">Password</label>
+                    <input type="password" name="pass" class="form-control" id="pass" required>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Sign Up</button>
+                <div class="form-text mt-3">Already have an account? <a href="/consumerLogin" class="text-primary">Login</a></div>
+            </form>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2025 Farmer's Marketplace. All rights reserved.</p>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
