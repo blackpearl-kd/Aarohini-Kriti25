@@ -27,13 +27,13 @@ Aarohini is a full-stack digital platform empowering 500+ organic farmers with t
 
 | Layer        | Technologies                          |
 |--------------|----------------------------------------|
-| Frontend     | React.js / Streamlit / HTML+CSS       |
-| Backend      | Node.js / Flask / Express             |
+| Frontend     | React.js & HTML+CSS       |
+| Backend      | Node.js & Express             |
 | ML Models    | Python, Pandas, scikit-learn, XGBoost |
-| Database     | MongoDB / Firebase / PostgreSQL       |
-| APIs         | OpenWeatherMap, AgriGov APIs, Custom  |
+| Database     | MongoDB       |
+| APIs         | Custom  |
 
 ---
 
-## 🗂️ Folder Structure
+
 
